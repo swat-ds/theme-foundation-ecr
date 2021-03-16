@@ -10543,7 +10543,9 @@ body.vertical-menu footer {
 
 header,
 footer,
-.breadcrumbs,
+.breadcrumbs, .button, [type="submit"],
+[type="button"], #submit_search, #exhibit-page-navigation .next-page,
+#exhibit-page-navigation .previous-page,
 .property dt,
 .property .element h3,
 .element .property h3,
@@ -10572,6 +10574,7 @@ body #content .property {
 
 header {
   background-color: #e8decb;
+  box-shadow: 0 0 5px #cacaca;
 }
 
 .top-bar {
@@ -10579,7 +10582,6 @@ header {
   margin: 0 auto;
   padding-bottom: 0;
   font-weight: 500;
-  font-size: 1.1rem;
   color: #4d6a6d;
 }
 
@@ -10596,19 +10598,20 @@ header {
 
 .top-bar .search-toggle {
   margin-bottom: 0;
+  border-radius: 2px;
 }
 
-.top-bar .top-bar-right {
-  margin-left: 0;
-}
-
-.top-bar .top-bar-left {
-  padding: 1rem 0;
+.top-bar .search-toggle .fa-search {
+  padding: 0 .5rem;
+  font-size: 1.25rem;
 }
 
 @media print, screen and (min-width: 40em) {
   .top-bar {
-    flex-direction: column;
+    display: block;
+  }
+  .top-bar #primary-nav {
+    justify-content: space-between;
   }
   .top-bar .top-bar-left {
     width: 50%;
@@ -10619,12 +10622,24 @@ header {
 .site-title {
   background: no-repeat left url("../assets/images/early-civil-rights-logo.svg");
   width: 100%;
-  height: 10rem;
+  height: 6rem;
 }
 
 a.site-title,
 a.site-title:hover {
   color: transparent;
+}
+
+#search-container {
+  box-shadow: 0 0 5px #cacaca;
+  background-color: #e8decb;
+  margin-bottom: 0;
+}
+
+#search-container #search-form {
+  padding: 0 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 footer {

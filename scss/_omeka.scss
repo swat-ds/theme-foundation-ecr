@@ -315,7 +315,7 @@ body.vertical-menu header .desktop {
 }
 
 #search-form {
-  @include xy-grid;
+  @include xy-grid();
 }
 
 #query {

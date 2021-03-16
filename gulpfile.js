@@ -12,20 +12,20 @@ function sass() {
   return gulp.src('scss/*.scss')
     .pipe($.sass({
       includePaths: sassPaths,
-      outputStyle: 'compressed' // if css compressed **file size**
+      outputStyle: 'expanded' // if css compressed **file size**
     })
       .on('error', $.sass.logError))
-    .pipe($.postcss([
-      autoprefixer()
-    ]))
+    // .pipe($.postcss([
+    //   autoprefixer()
+    // ]))
     .pipe(gulp.dest('css'))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
 };
 
 function serve() {
-  browserSync.init({
-    server: "./"
-  });
+  // browserSync.init({
+  //   server: "./"
+  // });
 
   gulp.watch("scss/*.scss", sass);
   gulp.watch("*.html").on('change', browserSync.reload);
