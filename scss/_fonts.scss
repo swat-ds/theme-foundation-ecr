@@ -1,21 +1,19 @@
+/* roboto-regular - latin */
 @font-face {
-    font-family: 'cormorant_garamondregular';
-    src: url('../fonts/cormorantgaramond-regular-webfont.woff2') format('woff2'),
-        url('../fonts/cormorantgaramond-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../assets/fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* roboto-500 - latin */
 @font-face {
-    font-family: 'Avenir Next';
-    src: url('../fonts/AvenirNext-Regular.woff2') format('woff2'),
-        url('../fonts/AvenirNext-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../assets/fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../assets/fonts/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-    
-$body-font-family: "Cormorant Garamond",Times, serif;
-$nav-font: "Avenir Next",Helvetica,sans-serif;
-
-$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default; 

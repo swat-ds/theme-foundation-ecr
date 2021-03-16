@@ -2,10 +2,138 @@
 
 @charset 'utf-8';
 
-@import 'fonts';
-@import 'variables';
 @import 'globals-default';
+@import 'fonts';
+
+// ECR Settings
+
+$foundation-palette: (
+  primary: #4d6a6d,
+  secondary: #e8decb,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
+$global-font-size: 20px;
+
 @import 'settings';
+
+$topbar-background: $secondary-color;
+$body-font-family: 'Georgia', "Times New Roman", Times, serif;
+$header-font-family: "Roboto", sans-serif;
+
 @import 'foundation-core';
 @import 'omeka';
 
+#content {
+  max-width: breakpoint(xlarge);
+}
+
+header,
+footer,
+.breadcrumbs,
+.property dt,
+.property dl,
+.property.tags,
+.quotation,
+.caption p,
+.browse-controls,
+#advanced-search,
+.search-filters,
+.site-page-pagination,
+.item-pagination {
+  font-family: $header-font-family;
+}
+
+body #content {
+  p,
+  .callout,
+  .property {
+    max-width: 680px;
+  }
+
+  // p,
+  // h2,
+  // h1,
+  // h3,
+  // h4,
+  // h5,
+  // h6,
+  // ul,
+  // .callout,
+  // blockquote,
+  // .item-with-metadata {
+    
+  //   width: 680px;
+  //     @include breakpoint(medium down) {
+  //       width: 100%;
+  //     }
+  // }
+
+  // p.full-width {   
+  //   width: auto;
+  //   max-width: unset;
+  //   @include xy-cell-offset(0);
+  // }
+}
+
+header {
+  background-color: $secondary-color;
+}
+
+.top-bar {
+  max-width: map-get($breakpoints,xlarge);
+  margin: 0 auto;
+  padding-bottom: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: $primary-color;
+
+  li a {
+    background-color: transparent;
+  }
+  li a:hover,
+  li a:active {
+    background-color: $primary-color;
+    color: $white;
+    transition: .3s;
+  }
+
+  .search-toggle {
+    margin-bottom: 0;
+  }
+  
+  .top-bar-right {
+    margin-left: 0;
+  }
+
+  .top-bar-left {
+    padding: 1rem 0;
+  }
+
+  @include breakpoint(medium up) {
+    // flex-direction: column;
+
+    .top-bar-left {
+      width: 50%;
+      max-width: 25rem;
+    }
+  }
+}
+
+.site-title {
+  background: no-repeat left url('../assets/images/early-civil-rights-logo.svg');
+  width: 100%;
+  height: 10rem;
+}
+
+a.site-title,
+a.site-title:hover {
+  color: transparent;
+}
+
+
+footer {
+  background-color: $secondary-color;
+}

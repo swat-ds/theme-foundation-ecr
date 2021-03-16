@@ -64,8 +64,11 @@ select {
   }
 }
 
+// 2021-03-16 @bulbil - for ecr child theme
+// - add xy-grid max-width
 body:not(.browse) #content {
-  @include xy-grid-container;
+  // @include xy-grid-container;
+  @include xy-grid-container(map-get($breakpoints,xlarge));
   padding: (2 * $global-padding) 0;  
 
   @include breakpoint(small down) {
@@ -362,8 +365,14 @@ body.vertical-menu header .desktop {
 
 // #. Footer
 // ------------------
-footer {
-  @include xy-grid-container;
+
+// 2021-03-16 @bulbil - for ecr child theme
+// - instantiate xy-grid at #footer-text instead of footer
+// - add xy-grid max-width
+// footer {
+#footer-text {
+  // @include xy-grid-container;
+  @include xy-grid-container(map-get($breakpoints,xlarge));
   padding: (2 * $global-padding) 0;
   
   @include breakpoint(small down) {
