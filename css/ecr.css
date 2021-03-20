@@ -10660,6 +10660,19 @@ body#home {
 .resource.show .media-embed,
 .resource.show .media-list {
   order: 1;
+  padding-bottom: 2rem;
+}
+
+.resource.show .media-embed .item-file,
+.resource.show .media-list .item-file {
+  max-width: 500px;
+}
+
+@media print, screen and (min-width: 40em) {
+  .resource.show .media-embed,
+  .resource.show .media-list {
+    padding-right: 2rem;
+  }
 }
 
 .resource.show #resource-values {

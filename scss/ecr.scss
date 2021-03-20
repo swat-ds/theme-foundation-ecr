@@ -171,9 +171,14 @@ body#home {
 
 .resource.show .media-embed, 
 .resource.show .media-list {
-  order: 1;
-}
+  order: -1;
+  padding-bottom: 2rem;
 
-.resource.show #resource-values {
-  order: 2;
+  .item-file {
+    max-width: 500px;
+  }
+
+  @include breakpoint(medium up) {
+    padding-right: 2rem;
+  }
 }
