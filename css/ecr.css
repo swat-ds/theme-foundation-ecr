@@ -765,7 +765,7 @@ a img {
 
 hr {
   clear: both;
-  max-width: 75rem;
+  max-width: 1200px;
   height: 0;
   margin: 1rem auto;
   border-top: 0;
@@ -1038,7 +1038,7 @@ ul.no-bullet, ol.no-bullet {
 .grid-container {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  max-width: 75rem;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -7933,7 +7933,7 @@ html.is-reveal-open body {
 @media print, screen and (min-width: 40em) {
   .reveal {
     width: 600px;
-    max-width: 75rem;
+    max-width: 1200px;
   }
 }
 
@@ -7944,21 +7944,21 @@ html.is-reveal-open body {
 @media print, screen and (min-width: 40em) {
   .reveal.tiny {
     width: 30%;
-    max-width: 75rem;
+    max-width: 1200px;
   }
 }
 
 @media print, screen and (min-width: 40em) {
   .reveal.small {
     width: 50%;
-    max-width: 75rem;
+    max-width: 1200px;
   }
 }
 
 @media print, screen and (min-width: 40em) {
   .reveal.large {
     width: 90%;
-    max-width: 75rem;
+    max-width: 1200px;
   }
 }
 
@@ -9118,7 +9118,7 @@ select {
   }
 }
 
-body #content {
+body:not(.browse) #content {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   max-width: 1200px;
@@ -9128,14 +9128,14 @@ body #content {
 }
 
 @media print, screen and (min-width: 40em) {
-  body #content {
+  body:not(.browse) #content {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
   }
 }
 
 @media print, screen and (max-width: 39.99875em) {
-  body #content {
+  body:not(.browse) #content {
     padding: 0;
     margin: 1rem;
   }
@@ -9364,7 +9364,7 @@ body.vertical-menu .vertical.menu.nested .active > a:before, body.vertical-menu 
 #search-container {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  max-width: 75rem;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem 0;
@@ -9450,7 +9450,7 @@ body.vertical-menu .vertical.menu.nested .active > a:before, body.vertical-menu 
 #content {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  max-width: 75rem;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -10197,7 +10197,7 @@ body.vertical-menu footer {
 .double #content {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  max-width: 75rem;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -10568,56 +10568,6 @@ body #content .property {
   max-width: 680px;
 }
 
-body #content p,
-body #content h2,
-body #content h1,
-body #content h3,
-body #content .element-set h2,
-.element-set body #content h2,
-body #content h4,
-body #content .site-title h1,
-.site-title body #content h1,
-body #content h5,
-body #content h6,
-body #content .element h3,
-.element body #content h3,
-body #content .element .element-set h2,
-.element .element-set body #content h2,
-body #content .element-set .element h2,
-.element-set .element body #content h2,
-body #content ul,
-body #content .callout,
-body #content blockquote,
-body #content .item-with-metadata {
-  margin-left: calc(8.33333% + 0.5rem);
-}
-
-@media print, screen and (max-width: 63.99875em) {
-  body #content p,
-  body #content h2,
-  body #content h1,
-  body #content h3,
-  body #content .element-set h2,
-  .element-set body #content h2,
-  body #content h4,
-  body #content .site-title h1,
-  .site-title body #content h1,
-  body #content h5,
-  body #content h6,
-  body #content .element h3,
-  .element body #content h3,
-  body #content .element .element-set h2,
-  .element .element-set body #content h2,
-  body #content .element-set .element h2,
-  .element-set .element body #content h2,
-  body #content ul,
-  body #content .callout,
-  body #content blockquote,
-  body #content .item-with-metadata {
-    margin-left: 0;
-  }
-}
-
 .breadcrumbs li {
   font-size: .8rem;
   text-transform: unset;
@@ -10716,6 +10666,7 @@ body#home {
   margin-right: auto;
 }
 
+<<<<<<< HEAD
 .jcarousel-wrapper {
   margin: 20px 0 40px;
   transform: translateY(60vh);
@@ -10736,4 +10687,26 @@ body#home {
   margin-bottom: 30%;
   transform: translate(0, 0) translateY(10vh);
   background-color: #e8decb;
+=======
+.resource.show .media-embed,
+.resource.show .media-list {
+  order: 1;
+  padding-bottom: 2rem;
+}
+
+.resource.show .media-embed .item-file,
+.resource.show .media-list .item-file {
+  max-width: 500px;
+}
+
+@media print, screen and (min-width: 40em) {
+  .resource.show .media-embed,
+  .resource.show .media-list {
+    padding-right: 2rem;
+  }
+}
+
+.resource.show #resource-values {
+  order: 2;
+>>>>>>> header-nav
 }
