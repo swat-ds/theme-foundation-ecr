@@ -10666,7 +10666,6 @@ body#home {
   margin-right: auto;
 }
 
-<<<<<<< HEAD
 .jcarousel-wrapper {
   margin: 20px 0 40px;
   transform: translateY(60vh);
@@ -10678,7 +10677,7 @@ body#home {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  Transition: opacity 0.6s ease-out,transform 1.2s ease-out;
+  transition: opacity 0.6s ease-out,transform 1.2s ease-out;
   background-color: #e8decb;
 }
 
@@ -10687,10 +10686,11 @@ body#home {
   margin-bottom: 30%;
   transform: translate(0, 0) translateY(10vh);
   background-color: #e8decb;
-=======
+}
+
 .resource.show .media-embed,
 .resource.show .media-list {
-  order: 1;
+  order: -1;
   padding-bottom: 2rem;
 }
 
@@ -10704,9 +10704,4 @@ body#home {
   .resource.show .media-list {
     padding-right: 2rem;
   }
-}
-
-.resource.show #resource-values {
-  order: 2;
->>>>>>> header-nav
 }
