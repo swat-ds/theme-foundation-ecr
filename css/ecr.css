@@ -10562,6 +10562,10 @@ footer,
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  height: 1200px;
+}
+
 body #content p,
 body #content .callout,
 body #content .property {
@@ -10717,23 +10721,17 @@ body#home {
 }
 
 .jcarousel-wrapper {
-  margin: 20px 0 40px;
-  transform: translateY(60vh);
-  padding: 50px;
+  display: none;
   position: relative;
-  -webkit-box-shadow: 0 0 2px #999;
-  -moz-box-shadow: 0 0 2px #999;
-  box-shadow: 0 0 2px #999;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  Transition: opacity 0.6s ease-out,transform 1.2s ease-out;
+  bottom: 2;
+  width: 100%;
   background-color: #e8decb;
+  z-index: 1;
+  transform: translateY(20vh);
+  margin: 20px 0 40px;
+  padding: 50px;
 }
 
-.jcarousel-wrapper.visible {
-  opacity: 1;
-  margin-bottom: 30%;
-  transform: translate(0, 0) translateY(10vh);
-  background-color: #e8decb;
+.jcarousel-wrapper li {
+  width: 356px !important;
 }
