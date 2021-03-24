@@ -1,10 +1,13 @@
 <?php $layout = (get_theme_option('item_show_columns') !== null) ? get_theme_option('item_show_columns') : 'single'; ?>
+<!--  2021-03-24 ECR Child Theme @bulbil
+    - fire plugin moved to image list
+    - adds DC:Format to wrap class -->
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'resource items show ' . $layout)); ?>
 <div class="resource-title">
     <h2><?php echo metadata('item', array('Dublin Core','Title')); ?></h2>
     <h3 class="label"><?php echo __('Item'); ?></h3>
 </div>
-<div class="wrap">
+<div class="wrap <?php echo text_to_id(html_escape(metadata('item',array('Dublin Core', 'Format')))) ?>">
     <?php if (metadata('item', 'has files')): ?>
     <?php $mediaDisplay = get_theme_option('item_show_media_display'); ?>
     <?php $mediaThumbnailSize = ($mediaDisplay == 'embed') ? 'fullsize' : 'square_thumbnail'; ?>    
@@ -46,7 +49,6 @@
         
         
        <?php 
-       // 2021-03-24 ECR Child Theme @bulbil moved up to images-list
        // fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
     </div>
 

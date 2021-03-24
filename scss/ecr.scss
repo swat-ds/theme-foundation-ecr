@@ -253,12 +253,15 @@ body#home {
   }
 }
 
-a.download-file {
-  display: none;
-}
+.wrap.applicationpdf {
 
-.resource.show .wrap {
-  display: block;
+  .item-file.application-pdf a.download-file {
+    display: none;
+  }
+
+  .resource.show .wrap {
+    display: block;
+  }
 }
 
 #docsviewer h2 {
