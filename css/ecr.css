@@ -10749,11 +10749,11 @@ body#home {
   border-bottom: 3px solid #4d6a6d;
 }
 
-.wrap.applicationpdf {
+.resource.show .wrap.applicationpdf {
   display: block;
 }
 
-.wrap.applicationpdf .item-file.application-pdf a.download-file {
+.resource.show .wrap.applicationpdf .item-file.application-pdf a.download-file {
   display: none;
 }
 
