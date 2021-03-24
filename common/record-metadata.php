@@ -2,6 +2,22 @@
 <!-- 2021-03-19 @bulbil
   custom order and display of metadata fields
   based on whether item and item type id -->
+<?php 
+    $dc = 'Dublin Core';
+    $oh = 'Oral History Item Type Metadata';
+    $displayElements = [
+        [$dc, 'Description'],
+        [$oh, 'Transcription'],
+        [$dc, 'Source'],
+        [$dc, 'Publisher'],
+        [$dc, 'Date'],
+        [$dc, 'Contributor'],
+        [$dc, 'Rights'],
+        [$oh, 'Interviewee'],
+        [$oh, 'Location'],
+        [$oh, 'Duration'],
+    ]
+?>
 <div class="element-set">
 
   <?php foreach ($displayElements as $displayElement): ?>
