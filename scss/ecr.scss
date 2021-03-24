@@ -1,12 +1,20 @@
-// here our cool styles live
+/* 
+
+ECR - Omeka Foundation Child Theme
+
+@bulbil
+@betovargas
+
+digital scholarship @ swarthmore college
+
+*/
 
 @charset 'utf-8';
-
 
 @import 'globals-default';
 @import 'fonts';
 
-// ECR Settings
+/* * * Defaults * * */
 
 $foundation-palette: (
   primary: #4d6a6d,
@@ -21,12 +29,25 @@ $global-width: 1200px;
 
 @import 'settings';
 
+/* * * Settings * * */
+
 $topbar-background: $secondary-color;
 $body-font-family: 'Georgia', "Times New Roman", Times, serif;
 $header-font-family: "Roboto", sans-serif;
 
 @import 'foundation-core';
 @import 'omeka';
+
+/* * * Styles * * *
+
+- global typography and layout
+
+
+
+*/
+
+
+
 
 header,
 footer,
@@ -45,7 +66,7 @@ footer,
   font-family: $header-font-family;
 }
 body {
-  height: 1200px;
+  min-height: 100vh;
 }
 body #content {
   p,
@@ -108,7 +129,7 @@ header {
 
   .search-toggle {
     margin-bottom: 0;
-    border-radius: 2px;
+    border-radius: $global-radius;
     .fa-search { 
       padding: 0 .5rem;
       font-size: 1.25rem;
@@ -156,13 +177,13 @@ a.site-title:hover {
 
 footer {
   background-color: $secondary-color;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5%;
-  height: 10%;
+  // position: fixed;
+  // bottom: 0;
+  // width: 100%;
+  // padding: 0.5%;
+  // height: 10%;
   p {
-    float: right;
+    text-align: right;
   }
 }
 
@@ -179,23 +200,20 @@ body#home {
   }
 }
 
-.jcarousel-wrapper {
-  display: none;
-  position: relative;
-  bottom: 2;
-  width: 100%;
+#home .jcarousel-wrapper {
+  // display: hidden;
+  // position: relative;
+  // bottom: 2;
+  // width: 100%;
   background-color: $secondary-color;
-  z-index: 1;
-  transform: translateY(20vh);
-  margin: 20px 0 40px;
-  padding: 50px;
-  li {
-    width: 356px !important;
-  }
+  // z-index: 1;
+  // transform: translateY(20vh);
+  // margin: 20px 0 40px;
+  // padding: 50px;
+  // li {
+  //   width: 356px !important;
+  // }
 }
-
-
-
 
 .resource.show .media-embed, 
 .resource.show .media-list {
@@ -208,5 +226,24 @@ body#home {
 
   @include breakpoint(medium up) {
     padding-right: 2rem;
+  }
+}
+
+#oral-history-item-type-metadata-transcription {
+  height: 75vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 2px solid $secondary-color;
+  border-radius: $global-radius;
+  box-shadow: $input-shadow;
+  padding: .5rem;
+
+  p {
+    transition: border-bottom 1s;
+    border-bottom: 3px solid transparent;
+  }
+
+  p.active {
+    border-bottom: 3px solid $primary-color;
   }
 }
