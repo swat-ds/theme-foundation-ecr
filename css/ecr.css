@@ -10749,12 +10749,12 @@ body#home {
   border-bottom: 3px solid #4d6a6d;
 }
 
-.wrap.applicationpdf .item-file.application-pdf a.download-file {
-  display: none;
+.wrap.applicationpdf {
+  display: block;
 }
 
-.wrap.applicationpdf .resource.show .wrap {
-  display: block;
+.wrap.applicationpdf .item-file.application-pdf a.download-file {
+  display: none;
 }
 
 #docsviewer h2 {
