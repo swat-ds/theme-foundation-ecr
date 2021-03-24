@@ -177,17 +177,14 @@ a.site-title:hover {
 
 footer {
   background-color: $secondary-color;
-  // position: fixed;
-  // bottom: 0;
-  // width: 100%;
-  // padding: 0.5%;
-  // height: 10%;
   p {
     text-align: right;
   }
 }
 
 body#home {
+
+  min-height: 150vh;
   background:
     linear-gradient(rgba(255, 255, 255, 0.7), 
     rgba(255, 265, 255, 0.7)), 
@@ -198,21 +195,29 @@ body#home {
     margin-left: auto;
     margin-right: auto;
   }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5%;
+    height: 10%;
+  }
 }
 
 #home .jcarousel-wrapper {
-  // display: hidden;
-  // position: relative;
-  // bottom: 2;
-  // width: 100%;
+  display: none;
+  position: relative;
+  bottom: 2;
+  width: 100%;
   background-color: $secondary-color;
-  // z-index: 1;
-  // transform: translateY(20vh);
-  // margin: 20px 0 40px;
-  // padding: 50px;
-  // li {
-  //   width: 356px !important;
-  // }
+  z-index: 1;
+  transform: translateY(20vh);
+  margin: 20px 0 40px;
+  padding: 50px;
+  li {
+    width: 356px !important;
+  }
 }
 
 .resource.show .media-embed, 

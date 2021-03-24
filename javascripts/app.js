@@ -4,6 +4,16 @@
         $('#search-container').toggleClass('open').toggleClass('closed');
       });
 
+      /* for index, scroll to fade */
+      if ( $('#home').length ){
+        var y = $(this).scrollTop();
+        if (y > 200) {
+          $('#home .jcarousel-wrapper').fadeIn();
+        } else {
+          $('#home .jcarousel-wrapper').fadeOut();
+        }
+      }
+
       /* for oral history view adds timeupdate listener */
       if ( $('audio').length ) {
         const $audio = $('audio');
