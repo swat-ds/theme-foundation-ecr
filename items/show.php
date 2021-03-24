@@ -14,6 +14,7 @@
                 'imageSize' => $mediaThumbnailSize,
             )); 
         ?>
+    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
     </div>
     <?php endif; ?>
 
@@ -42,8 +43,11 @@
             <h3><?php echo __('Citation'); ?></h3>
             <div class="element-text"><?php echo metadata('item','citation',array('no_escape'=>true)); ?></div>
         </div>
-
-       <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+        
+        
+       <?php 
+       // 2021-03-24 ECR Child Theme @bulbil moved up to images-list
+       // fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
     </div>
 
     <div class="item-pagination navigation">

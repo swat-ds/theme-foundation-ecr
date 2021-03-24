@@ -10748,3 +10748,15 @@ body#home {
 #oral-history-item-type-metadata-transcription p.active, #oral-history-item-type-metadata-transcription #exhibit-pages p.current, #exhibit-pages #oral-history-item-type-metadata-transcription p.current {
   border-bottom: 3px solid #4d6a6d;
 }
+
+a.download-file {
+  display: none;
+}
+
+.resource.show .wrap {
+  display: block;
+}
+
+#docsviewer h2 {
+  display: none;
+}
