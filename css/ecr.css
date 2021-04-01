@@ -27,6 +27,30 @@ digital scholarship @ swarthmore college
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* cormorant-garamond-regular */
+@font-face {
+  font-family: 'cormorant_garamondregular';
+  src: url("cormorantgaramond-regular-webfont.woff2") format("woff2"), url("cormorantgaramond-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* cormorant-garamond-italic */
+@font-face {
+  font-family: 'cormorant_garamonditalic';
+  src: url("cormorantgaramond-italic-webfont.woff2") format("woff2"), url("cormorantgaramond-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* cormorant-garamond-bold */
+@font-face {
+  font-family: 'cormorant_garamondbold';
+  src: url("cormorantgaramond-bold-webfont.woff2") format("woff2"), url("cormorantgaramond-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* * * Defaults * * */
 /* * * Settings * * */
 /**
@@ -239,7 +263,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: "Garamond", "Times New Roman", Times, serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
