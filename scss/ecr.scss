@@ -93,11 +93,11 @@ body #content {
   //   }
   // }
 
-  // p.full-width {   
-  //   width: auto;
-  //   max-width: unset;
-  //   @include xy-cell-offset(0);
-  // }
+  p.full-width {   
+    width: auto;
+    max-width: unset;
+    @include xy-cell-offset(0);
+  }
 }
 
 .breadcrumbs li {

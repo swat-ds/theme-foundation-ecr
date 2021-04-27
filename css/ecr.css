@@ -10594,6 +10594,12 @@ body #content .property {
   max-width: 680px;
 }
 
+body #content p.full-width {
+  width: auto;
+  max-width: unset;
+  margin-left: calc(0% + 0.5rem);
+}
+
 .breadcrumbs li {
   font-size: .8rem;
   text-transform: unset;
