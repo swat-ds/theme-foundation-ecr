@@ -30,7 +30,7 @@ digital scholarship @ swarthmore college
 /* cormorant-garamond-regular */
 @font-face {
   font-family: 'Cormorant Garamond';
-  src: url("../assets/cormorantgaramond-regular-webfont.woff2") format("woff2"), url("../assets/cormorantgaramond-regular-webfont.woff") format("woff");
+  src: url("../assets/fonts/cormorantgaramond-regular-webfont.woff2") format("woff2"), url("../assets/fonts/cormorantgaramond-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -38,14 +38,14 @@ digital scholarship @ swarthmore college
 /* cormorant-garamond-italic */
 @font-face {
   font-family: 'Cormorant Garamond';
-  src: url("../assets/cormorantgaramond-italic-webfont.woff2") format("woff2"), url("../assets/cormorantgaramond-italic-webfont.woff") format("woff");
+  src: url("../assets/fonts/cormorantgaramond-italic-webfont.woff2") format("woff2"), url("../assets/fonts/cormorantgaramond-italic-webfont.woff") format("woff");
   font-style: italic;
 }
 
 /* cormorant-garamond-bold */
 @font-face {
   font-family: 'Cormorant Garamond';
-  src: url("../assets/cormorantgaramond-bold-webfont.woff2") format("woff2"), url("../assets/cormorantgaramond-bold-webfont.woff") format("woff");
+  src: url("../assets/fonts/cormorantgaramond-bold-webfont.woff2") format("woff2"), url("../assets/fonts/cormorantgaramond-bold-webfont.woff") format("woff");
   font-weight: bold;
 }
 
