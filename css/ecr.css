@@ -29,7 +29,7 @@ digital scholarship @ swarthmore college
 
 /* cormorant-garamond-regular */
 @font-face {
-  font-family: 'cormorant_garamondregular';
+  font-family: 'Cormorant Garamond';
   src: url("cormorantgaramond-regular-webfont.woff2") format("woff2"), url("cormorantgaramond-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -37,18 +37,16 @@ digital scholarship @ swarthmore college
 
 /* cormorant-garamond-italic */
 @font-face {
-  font-family: 'cormorant_garamonditalic';
+  font-family: 'Cormorant Garamond';
   src: url("cormorantgaramond-italic-webfont.woff2") format("woff2"), url("cormorantgaramond-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 
 /* cormorant-garamond-bold */
 @font-face {
-  font-family: 'cormorant_garamondbold';
+  font-family: 'Cormorant Garamond';
   src: url("cormorantgaramond-bold-webfont.woff2") format("woff2"), url("cormorantgaramond-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
 }
 
 /* * * Defaults * * */
@@ -263,7 +261,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Garamond", "Times New Roman", Times, serif;
+  font-family: "Cormorant Garamond", "Times New Roman", Times, serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -10581,6 +10579,10 @@ body.vertical-menu footer {
 1. Typography and Layout
 2. Header and Navigation
 3. Footer
+4. Item Views
+5. Page Styles
+  - Home
+  - Timeline
 
 */
 /* 1. Typography and Layout */
