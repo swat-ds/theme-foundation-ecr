@@ -40,15 +40,19 @@ $header-font-family: "Roboto", sans-serif;
 
 /* * * Styles * * *
 
-- global typography and layout
-
-
+1. Typography and Layout
+2. Header and Navigation
+3. Footer
+4. Item Views
+5. Page Styles
+  - Home
+  - Timeline
 
 */
 
 
 
-
+/* 1. Typography and Layout */
 header,
 footer,
 .breadcrumbs,
@@ -105,6 +109,7 @@ body #content {
   text-transform: unset;
 }
 
+/* 2. Header and Navigation */
 header {
   background-color: $secondary-color;
   box-shadow: $input-shadow-focus;
@@ -174,7 +179,7 @@ a.site-title:hover {
   }
 }
 
-
+/* 3. Footer */
 footer {
   background-color: $secondary-color;
   p {
@@ -182,43 +187,7 @@ footer {
   }
 }
 
-body#home {
-
-  min-height: 150vh;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.7), 
-    rgba(255, 265, 255, 0.7)), 
-    no-repeat top/cover fixed url(../assets/images/freedom-summer.jpg);
-}
-#home {
-  #content p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0.5%;
-    height: 10%;
-  }
-}
-
-#home .jcarousel-wrapper {
-  display: none;
-  position: relative;
-  bottom: 2;
-  width: 100%;
-  background-color: $secondary-color;
-  z-index: 1;
-  transform: translateY(20vh);
-  margin: 20px 0 40px;
-  padding: 50px;
-  li {
-    width: 356px !important;
-  }
-}
+/* 4. Item Views */
 
 .resource.show .media-embed, 
 .resource.show .media-list {
@@ -262,5 +231,52 @@ body#home {
 }
 
 #docsviewer h2 {
+  display: none;
+}
+
+/* 5. Page Styles */
+
+/* Home */
+body#home {
+
+  min-height: 150vh;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.7), 
+    rgba(255, 265, 255, 0.7)), 
+    no-repeat top/cover fixed url(../assets/images/freedom-summer.jpg);
+}
+#home {
+  #content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5%;
+    height: 10%;
+  }
+}
+
+#home .jcarousel-wrapper {
+  display: none;
+  position: relative;
+  bottom: 2;
+  width: 100%;
+  background-color: $secondary-color;
+  z-index: 1;
+  transform: translateY(20vh);
+  margin: 20px 0 40px;
+  padding: 50px;
+  li {
+    width: 356px !important;
+  }
+}
+
+/* Timeline */
+
+#timeline #primary h1:first-of-type {
   display: none;
 }
