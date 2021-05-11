@@ -4,18 +4,6 @@
       $('#search-container').toggleClass('open').toggleClass('closed');
     });
 
-    /* for index, scroll to fade */
-    if ( $('#home').length ){
-      $(document).on('scroll', function(){
-        var y = $(this).scrollTop();
-        if (y > 200) {
-          $('.jcarousel-wrapper').fadeIn();
-        } else {
-          $('.jcarousel-wrapper').fadeOut();
-        }
-      });
-    }
-
     /* for oral history view adds timeupdate listener */
     if ( $('audio').length ) {
       const $audio = $('audio');
