@@ -2,7 +2,7 @@
   $(document).ready(function() {
     $('.search-toggle').on('click',function() {
       $('#search-container').toggleClass('open').toggleClass('closed');
-    });
+    }); 
 
     /* for oral history view adds timeupdate listener */
     if ( $('audio').length ) {
