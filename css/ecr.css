@@ -10714,6 +10714,30 @@ footer p {
   text-align: right;
 }
 
+footer #footer-text {
+  display: flex;
+  justify-items: flex-start;
+  align-items: flex-end;
+  padding-top: .5em;
+}
+
+footer #footer-text > a {
+  padding-bottom: .25rem;
+}
+
+footer #footer-text a:nth-of-type(2) {
+  margin-left: 1em;
+}
+
+footer span {
+  flex: 1;
+  text-align: right;
+}
+
+footer span img {
+  height: 7em;
+}
+
 /* 4. Item Views */
 .resource.show .media-embed,
 .resource.show .media-list {
