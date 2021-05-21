@@ -10719,6 +10719,7 @@ footer #footer-text {
   justify-items: flex-start;
   align-items: flex-end;
   padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 footer #footer-text > a {
@@ -10802,14 +10803,6 @@ body#home {
 #home #content p {
   margin-left: auto;
   margin-right: auto;
-}
-
-#home footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5%;
-  height: 10%;
 }
 
 #home .jcarousel-wrapper {
