@@ -75,7 +75,8 @@ body {
 body #content {
   p,
   .callout,
-  .property {
+  .property,
+  li {
     max-width: 680px;
   }
 

@@ -10617,7 +10617,8 @@ body {
 
 body #content p,
 body #content .callout,
-body #content .property {
+body #content .property,
+body #content li {
   max-width: 680px;
 }
 
