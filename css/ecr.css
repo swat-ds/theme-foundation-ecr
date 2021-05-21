@@ -10784,6 +10784,10 @@ footer span img {
   display: none;
 }
 
+.resource.show .wrap.applicationpdf .item-file.image-jpeg {
+  display: none;
+}
+
 #docsviewer h2 {
   display: none;
 }
