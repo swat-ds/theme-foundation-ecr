@@ -4,6 +4,7 @@ Based on the Foundation Classic Omeka theme, this child theme includes custom st
 
 - features transcript auto scroll on oral history audio timestamp update
 - style assets based on work by Guinevere Mesh and Katie Knox
+- updates to `common/record-metadata.php` and `items/show.php`
 
 **Instructions for processing transcripts:**
 
