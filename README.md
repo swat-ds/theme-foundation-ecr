@@ -1,4 +1,28 @@
-# Foundation Classic
+# Civil Rights 1960-1966 Theme
+
+Based on the Foundation Classic Omeka theme, this child theme includes custom styles and assets for [Civil Rights 1960-1966 project site](https://ds-exhibits.swarthmore.edu/civil-rights-1960-1966/).
+
+- features transcript auto scroll on oral history audio timestamp update
+- style assets based on work by Guinevere Mesh and Katie Knox
+
+**Instructions for processing transcripts:**
+
+Auto scroll feature for oral history item requires: 
+
+- One and only one oral history audio file associated with item
+- Processed transcript HTML fragment in Item Type Metadata transcript field using `source` field
+
+1) [Download `process.py` transcript processing script gist](https://gist.github.com/bulbil/c23211ace6e2cc5b798ae63aeb201ef7)
+2) Download Panopto auto generated transcript files
+3) run `python process.py` from within transcript files folder
+
+More detail included in transform gist.
+
+---
+
+**Further information about parent theme**
+
+## Foundation Classic
 
 This is an Omeka Classic theme based on ZURB Foundation Sites. It currently comes with a default stylesheet for prototyping as well as 3 other style options. 
 
